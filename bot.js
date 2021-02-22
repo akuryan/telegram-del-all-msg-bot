@@ -13,4 +13,6 @@ bot.command('deleteAll', async (ctx) => {
     }
 });
 
-bot.launch();
+bot.command('help', (ctx) => ctx.reply('Bot commands: \r\n deleteAll - to delete all messages in chat'))
+
+bot.startPolling();
